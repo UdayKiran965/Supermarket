@@ -1,0 +1,151 @@
+body{
+  padding: 25px;/* Reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styles.css */
+.container {
+    border: 2px solid #333; /* Adjust the color and thickness as needed */
+    padding: 20px;
+    border-radius: 8px; /* Optional: for rounded corners */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Light grey background */
+    color: rgb(0, 128, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+/* Container for the content, centered */
+.container {
+    width: 100%;
+    max-width: 700px; /* Max width for the form container */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+   box-shadow: 0 4px 8px gray;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+}
+
+/* Headings */
+h1 {
+    font-size: 30px;
+    color: #1E90FF; /* Bright Blue for a modern look */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #4682B4; /* Steel blue for secondary headings */
+    margin-bottom: 10px;
+}
+
+/* Styling form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Labels for the input fields */
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Text inputs */
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 2px solid #1E90FF; /* Blue border */
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+/* Focus effect for inputs */
+input[type="text"]:focus,
+textarea:focus,
+input[type="date"]:focus {
+    border-color: #4682B4; /* Darker blue when focused */
+}
+
+/* Text area for content */
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Submit button */
+button {
+    background-color: #1E90FF; /* Blue button */
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4682B4; /* Darker blue on hover */
+}
+
+/* Link to cancel */
+a {
+    color: #1E90FF;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #4682B4; /* Darker blue when hovered */
+}
+
+/* Responsive Design for mobile view */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+}
+.title {
+	color: #5C6AC4;
+}

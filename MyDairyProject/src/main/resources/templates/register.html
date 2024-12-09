@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Register - MyDiary</title>
+    <link rel="stylesheet" th:href="@{/reg.css}">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h1 class="diary-title">
+            <img src="data:image/png;base64,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" alt="Book Symbol" class="book-icon">
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="register-box">
+                <h2 class="register-title">Register</h2>
+                <form th:action="@{/register}" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required /><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required /><br>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required /><br><br>
+                    <button type="submit" class="register-btn">Register</button>
+                    <div th:if="${error}" th:text="${error}" class="error-message"></div>
+                </form>
+                <p>Already have an account? <a th:href="@{/login}">Login here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

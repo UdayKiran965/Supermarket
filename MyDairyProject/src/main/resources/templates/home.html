@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Diary Home</title>
+    <link rel="stylesheet" href="/fb.css">  <!--Ensure this is correct -->
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Diary</h1>
+        <p>Your diary entries will be displayed here.</p>
+        <a th:href="@{/diary/add}">Add New Entry</a><br>
+        <br>
+        <center>
+        <table border="3">
+        <thead font-weight: bold;>
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+           <tbody>
+            <tr th:each="entry : ${entries}">
+                <td th:text="${entry.title}">Title</td>
+                <td th:text="${entry.date}">Date</td>
+                <td>
+                    <a th:href="@{/diary/view/{id}(id=${entry.id})}">View</a>
+                    <a th:href="@{/diary/edit/{id}(id=${entry.id})}">Edit</a>
+                      <a th:href="@{/diary/delete/{id}(id=${entry.id})}" onclick="return confirm('Are you sure?');">Delete</a>
+                   <!-- <form th:action="@{/diary/delete/{id}(id=${entry.id})}" method="post" onsubmit="return confirm('Are you sure you want to delete this entry?');">
+    <button type="submit">Delete</button>-->
+</form>
+
+                </td>
+            </tr>
+             </tbody>
+    </table><br><br>
+    </center>
+  <!--          <a th:href="@{/diary/view/{id}}">view Entrys</a>-->
+    </div>
+</body>
+
+</html>

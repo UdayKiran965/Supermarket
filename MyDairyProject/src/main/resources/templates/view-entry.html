@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" th:href="@{/fb.css}">
+
+<head>
+    <title>View Diary Entry</title>
+</head>
+<body>
+<div class="container">
+    <h1>Diary Entry</h1>
+
+    <p><strong>Title:</strong> <span th:text="${entry.title}">Title</span></p>
+    <p><strong>Date:</strong> <span th:text="${entry.date}">Date</span></p>
+    <p><strong>Content:</strong></p>
+    <p th:text="${entry.content}">Content</p>
+
+    <a href="/">Back to List</a>
+    <a th:href="@{/diary/edit/{id}(id=${entry.id})}">Edit</a>
+    </div>
+</body>
+</html>

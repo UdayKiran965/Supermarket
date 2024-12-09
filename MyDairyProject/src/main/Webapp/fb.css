@@ -1,0 +1,14 @@
+.container {
+    border: 2px solid #000; /* Black border, change color if needed */
+    padding: 20px;
+    margin: auto;
+    width: 50%; /* Adjust width as necessary */
+    background-color: #e0f7e0; /* Light green background color */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow */
+}
+.container{
+    width: 50%;        /* Set the width of the content */
+    margin: 0 auto;    /* Center the div horizontally */
+    text-align:center; /* Optionally center text inside the div */
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="Mydairyproject.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/MyDairyProject/my project.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <folder path="/MyDairyProject/src"/>
+        <folder path="/MyDairyProject/target"/>
+        <file path="/MyDairyProject/.classpath"/>
+        <file path="/MyDairyProject/.factorypath"/>
+        <file path="/MyDairyProject/.gitattributes"/>
+        <file path="/MyDairyProject/.gitignore"/>
+        <file path="/MyDairyProject/.project"/>
+        <file path="/MyDairyProject/HELP.md"/>
+        <file path="/MyDairyProject/mvnw"/>
+        <file path="/MyDairyProject/mvnw.cmd"/>
+        <file path="/MyDairyProject/pom.xml"/>
+        <javaElement handleIdentifier="=MyDairyProject/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/"/>
+        <javaElement handleIdentifier="=MyDairyProject/src\/main\/resources=/maven.pomderived=/true=/=/optional=/true=/"/>
+        <javaElement handleIdentifier="=MyDairyProject/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/"/>
+        <javaElement handleIdentifier="=MyDairyProject/target\/generated-sources\/annotations=/optional=/true=/"/>
+        <javaElement handleIdentifier="=MyDairyProject/target\/generated-test-sources\/test-annotations=/optional=/true=/=/test=/true=/"/>
+    </selectedElements>
+</jardesc>
